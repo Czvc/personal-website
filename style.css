@@ -1,0 +1,80 @@
+body{
+    background-color: white;
+    color: black;
+}
+/**CAROUSEL CSS**/
+.carousel{
+    height: 80vh;
+    max-width: 250vh;
+    max-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.c-item{
+    height: 80vh;
+    max-height: 100%;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+.carousel-item h2{
+    opacity: 0;
+}
+.carousel-item p{
+    opacity: 0;
+}
+.carousel-item.active h2{
+    animation: fadeInLeft 0.5s ease forwards;
+}
+.carousel-item.active p{
+    animation: fadeInRight 0.5s ease forwards;
+}
+/**CAROUSEL ANIMATIONS**/
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+/**CARD IMAGE**/
+.food-img{
+    height: 400px;
+  }
+.hobby-img{
+    height: 400px;
+}
+/**GALLERY CSS**/
+.gallery{
+    padding: 50px 0;
+}
+.gallery img{
+    max-width: 100%;
+    height: 300px;
+    width: 450px;
+}
+/**FOOTER SOCMED**/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+  }
